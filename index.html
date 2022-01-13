@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Formulaire PHP</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="login-div">
+        <div class="title">Formulaire</div>
+        <div class="sub">Grâce a PHP</div>
+
+        <div class="zone">
+          <form method="post" action="/php/controller.php">
+            Âge :
+            <input
+              type="text"
+              name="age"
+              placeholder="Entrez votre Âge"
+            /><br />
+            <button class="buttontype" type="submit">Valider</button>
+          </form>
+
+          <form method="post" action="/php/controller2.php">
+            Votre Date :
+            <input
+              type="date"
+              name="datenaissance"
+              placeholder="Entrer votre Date de naissance"
+            /><br />
+            <button class="buttontype" type="submit">Valider</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <p>By Théo</p>
+  </body>
+</html>
