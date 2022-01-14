@@ -5,37 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Formulaire PHP</title>
+    <title>Formulaire Node.Js</title>
   </head>
   <body>
     <section class="container">
       <div class="login-div">
         <div class="title">Formulaire</div>
-        <div class="sub">Grâce a PHP</div>
+        <div class="sub">Grâce a Javascript</div>
 
         <div class="zone">
-          <form method="post" action="/php/controller.php">
-            Âge :
-            <input
-              type="text"
-              name="age"
-              placeholder="Entrez votre Âge"
-            /><br />
-            <button class="buttontype" type="submit">Valider</button>
-          </form>
+          Âge :
+          <input
+            type="text"
+            name="age"
+            id="age"
+            placeholder="Entrez votre Âge"
+          /><br />
+          <button class="buttontype" type="button" id="btnage">Valider</button>
 
-          <form method="post" action="/php/controller2.php">
-            Votre Date :
-            <input
-              type="date"
-              name="datenaissance"
-              placeholder="Entrer votre Date de naissance"
-            /><br />
-            <button class="buttontype" type="submit">Valider</button>
-          </form>
+          Votre Date :
+          <input
+            type="date"
+            name="datenaissance"
+            id="date"
+            placeholder="Entrer votre Date de naissance"
+          /><br />
+          <button class="buttontype" type="button" id="btndate">Valider</button>
         </div>
       </div>
     </section>
     <p>By Théo</p>
+    <script src="index.js"></script>
   </body>
 </html>
